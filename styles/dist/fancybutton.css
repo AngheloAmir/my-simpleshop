@@ -1,0 +1,24 @@
+#PongDesignFancyButton {
+  align-self: center;
+  background-color: #917ee6;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+  border: 0;
+  color: black;
+  height: 2.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  -webkit-touch-callout: none;
+}
+@media (min-width: 578px) {
+  #PongDesignFancyButton {
+    margin-top: 1rem;
+  }
+}
+#PongDesignFancyButton:hover {
+  background-color: #5151a3;
+  border: 0;
+  color: white;
+}
+#PongDesignFancyButton:active {
+  background-color: #343469;
+}

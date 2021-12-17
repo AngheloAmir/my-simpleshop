@@ -1,0 +1,196 @@
+main {
+  margin-top: 4rem;
+}
+main header {
+  position: relative;
+}
+main header img {
+  width: 100%;
+}
+@media (min-width: 567px) {
+  main header img {
+    height: 320px;
+  }
+}
+@media (min-width: 767px) {
+  main header img {
+    height: 360px;
+  }
+}
+@media (min-width: 1200px) {
+  main header img {
+    align-self: center;
+    max-width: 1200px;
+  }
+}
+main header button {
+  position: absolute;
+  left: calc((100vw - 300px) / 2);
+  top: 50vw;
+  width: 300px !important;
+}
+@media (min-width: 567px) {
+  main header button {
+    left: 10vw;
+    top: 220px;
+    width: 180px !important;
+  }
+}
+@media (min-width: 767px) {
+  main header button {
+    top: 250px;
+    width: 200px !important;
+  }
+}
+@media (min-width: 1200px) {
+  main header button {
+    top: 250px;
+    width: 280px !important;
+  }
+}
+
+#onsale {
+  margin-top: 1rem;
+  position: relative;
+}
+#onsale header {
+  position: absolute;
+  left: calc((100% - 300px) / 2);
+  z-index: 2;
+}
+#onsale header img {
+  width: 300px;
+}
+#onsale #products {
+  padding-top: 3rem;
+}
+#onsale #products #product-card {
+  box-shadow: 1px 1px 3px gray;
+  padding: 0.5rem;
+}
+#onsale #products #product-card .card-header {
+  position: relative;
+}
+#onsale #products #product-card .card-header img {
+  max-height: 350px;
+  width: 60%;
+  height: 60%;
+  margin-left: 20%;
+}
+#onsale #products #product-card .card-header h3 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+#onsale #products #product-card .card-header .discount {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 96px;
+  width: 96px !important;
+  height: 96px !important;
+}
+#onsale #products #product-card .card-contents {
+  margin-left: 2.5%;
+  width: 95%;
+}
+@media (min-width: 1200px) {
+  #onsale #products #product-card .card-contents {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#onsale #products #product-card .card-contents .rating {
+  display: flex;
+  justify-content: space-between;
+}
+#onsale #products #product-card .card-contents .rating img {
+  height: 32px;
+}
+@media (min-width: 567px) {
+  #onsale #products #product-card .card-contents .rating img {
+    height: 24px;
+    width: 130px;
+  }
+}
+#onsale #products #product-card .card-contents .rating h3 {
+  background-color: rgba(255, 166, 0, 0.562);
+  border-radius: 3rem;
+  margin-right: 0.2rem;
+  padding: 0.2rem 1rem;
+}
+#onsale #products #product-card .card-contents .rating h3 del {
+  color: gray;
+  font-weight: 300;
+  margin-left: 0rem;
+}
+#onsale #products #product-card .card-contents .buynow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.1rem;
+}
+#onsale #products #product-card .card-contents .buynow button {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  width: 50% !important;
+}
+#onsale #products #product-card .card-contents .buynow p {
+  padding-top: 0.25rem;
+}
+
+#about-tap-tap {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-image: -webkit-linear-gradient(#ddf9fa, #e9f3f7);
+  border-top-right-radius: 100px;
+}
+@media (min-width: 567px) {
+  #about-tap-tap {
+    border-top-right-radius: 240px;
+  }
+}
+#about-tap-tap h1 {
+  text-align: center;
+}
+#about-tap-tap article {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+@media (min-width: 567px) {
+  #about-tap-tap article {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#about-tap-tap article img {
+  height: 220px;
+  margin-bottom: 0.5rem;
+  margin-left: calc((100% - 220px) / 2);
+}
+@media (min-width: 567px) {
+  #about-tap-tap article img {
+    margin-left: 0;
+    margin: auto;
+    width: 240px;
+  }
+}
+@media (min-width: 567px) {
+  #about-tap-tap article div {
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+}
+#about-tap-tap article div h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+#about-tap-tap article div p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}

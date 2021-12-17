@@ -1,0 +1,187 @@
+main {
+    margin-top: 4rem;
+
+    header {
+        position: relative;
+
+        img {
+            width: 100%;
+            @media (min-width: 567px) {
+                height: 320px;
+            }
+            @media (min-width: 767px) {
+                height: 360px;
+            }
+            @media (min-width: 1200px) {
+                align-self: center;
+                max-width: 1200px;
+            }
+        }
+
+        button {
+            position: absolute;
+            left: calc((100vw - 300px) / 2);
+            top: 50vw;
+            width: 300px !important;
+            @media (min-width: 567px) {
+                left: 10vw;
+                top: 220px;
+                width: 180px !important;
+            }
+            @media (min-width: 767px) {
+                top: 250px;
+                width: 200px !important;
+            }
+            @media (min-width: 1200px) {
+                top: 250px;
+                width: 280px !important;
+            }
+        }
+    }
+}
+
+#onsale {
+    margin-top: 1rem;
+    position: relative;
+
+    header {
+        position: absolute;
+        left: calc((100% - 300px) / 2);
+        img {
+            width: 300px;
+        }
+        z-index: 2;
+    }
+
+    #products {
+        padding-top: 3rem;
+
+        #product-card {
+            box-shadow: 1px 1px 3px gray;
+            padding: 0.5rem;
+
+            .card-header {
+                position: relative;
+                img {
+                    max-height: 350px;
+                    width: 60%;
+                    height: 60%;
+                    margin-left: 20%;
+                }
+                h3 {
+                    text-align: center;
+                    margin: 0.5rem 0;
+                }
+                .discount {
+                    position: absolute;
+                    right: 0.5rem;
+                    top: 0.5rem;
+                    width: 96px;
+                    width: 96px !important;
+                    height: 96px !important;
+                }
+            }
+            .card-contents{
+                margin-left: 2.5%;
+                width: 95%;
+                @media (min-width: 1200px) {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+
+                .rating {
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        height: 32px;
+                        @media (min-width: 567px) {
+                            height: 24px;
+                            width: 130px;
+                        }   
+                    }
+                    h3 {
+                        background-color: rgba(255, 166, 0, 0.562);
+                        border-radius: 3rem;
+                        margin-right: 0.2rem;
+                        padding: 0.2rem 1rem;
+                        del {
+                            color: gray;
+                            font-weight: 300;
+                            margin-left: 0rem;
+                        }
+                    }
+                }
+                .buynow {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1rem;
+                    padding-top: 0.1rem;
+                    button {
+                        margin-top: 0 !important;
+                        padding-top: 0 !important;
+                        width: 50% !important;
+                    }
+                    p {
+                        padding-top: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#about-tap-tap {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-image: -webkit-linear-gradient(rgb(221, 249, 250), rgb(233, 243, 247));
+    border-top-right-radius: 100px;
+    @media (min-width: 567px) {
+        border-top-right-radius: 240px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+        @media (min-width: 567px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            height: 220px;
+            margin-bottom: 0.5rem;
+            margin-left: calc((100% - 220px) / 2);
+            @media (min-width: 567px) {
+                margin-left: 0;
+                margin: auto;
+                width: 240px;
+            }
+        }
+        
+        div {
+            @media (min-width: 567px) {
+                width: 60%;
+                max-width: 800px;
+                margin: auto;
+                margin-top: 0.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 0.5rem;
+                text-align: center;
+            }
+            p {
+                text-align: justify;
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

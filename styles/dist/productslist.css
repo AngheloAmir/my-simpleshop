@@ -1,0 +1,106 @@
+main {
+  margin-top: 4.5rem;
+}
+@media (min-width: 567px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+main img {
+  margin-left: calc((100vw - 320px) / 2);
+  width: 320px;
+}
+@media (min-width: 567px) {
+  main img {
+    margin-left: 0;
+  }
+}
+main header {
+  display: block;
+  margin-top: 0.5rem;
+}
+main header h1 {
+  text-align: center;
+}
+main header p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#onsale #products {
+  padding-top: 3rem;
+}
+#onsale #products #product-card {
+  box-shadow: 1px 1px 3px gray;
+  padding: 0.5rem;
+}
+#onsale #products #product-card .card-header {
+  position: relative;
+}
+#onsale #products #product-card .card-header img {
+  max-height: 350px;
+  width: 60%;
+  height: 60%;
+  margin-left: 20%;
+}
+#onsale #products #product-card .card-header h3 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+#onsale #products #product-card .card-header .discount {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 96px;
+  width: 96px !important;
+  height: 96px !important;
+}
+#onsale #products #product-card .card-contents {
+  margin-left: 2.5%;
+  width: 95%;
+}
+@media (min-width: 1200px) {
+  #onsale #products #product-card .card-contents {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#onsale #products #product-card .card-contents .rating {
+  display: flex;
+  justify-content: space-between;
+}
+#onsale #products #product-card .card-contents .rating img {
+  height: 32px;
+}
+@media (min-width: 567px) {
+  #onsale #products #product-card .card-contents .rating img {
+    height: 24px;
+    width: 130px;
+  }
+}
+#onsale #products #product-card .card-contents .rating h3 {
+  background-color: rgba(255, 166, 0, 0.562);
+  border-radius: 3rem;
+  margin-right: 0.2rem;
+  padding: 0.2rem 1rem;
+}
+#onsale #products #product-card .card-contents .rating h3 del {
+  color: gray;
+  font-weight: 300;
+  margin-left: 0rem;
+}
+#onsale #products #product-card .card-contents .buynow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.1rem;
+}
+#onsale #products #product-card .card-contents .buynow button {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  width: 50% !important;
+}
+#onsale #products #product-card .card-contents .buynow p {
+  padding-top: 0.25rem;
+}

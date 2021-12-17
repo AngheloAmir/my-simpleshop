@@ -1,0 +1,168 @@
+#navigation {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 10;
+  /*========================================================*/
+  /*========================================================*/
+  /*========================================================*/
+}
+@media (min-width: 580px) {
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+  }
+}
+@media (min-width: 980px) {
+  #navigation {
+    padding: 0.5rem 10vw;
+  }
+}
+#navigation .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+#navigation .nav-container .brand {
+  display: inline;
+  margin: 0.5rem 3rem 0 2rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 579px) {
+  #navigation .nav-container .menuicon {
+    display: none !important;
+  }
+}
+#navigation #navigation-items {
+  overflow: hidden;
+}
+@media (max-width: 580px) {
+  #navigation #navigation-items ul {
+    width: 90%;
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  #navigation #navigation-items ul li {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  #navigation #navigation-items ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding-right: 5rem;
+  }
+  #navigation #navigation-items ul li a :active {
+    color: blue;
+  }
+  #navigation #navigation-items ul li :hover {
+    color: blue;
+    font-weight: bold;
+  }
+  #navigation #navigation-items ul li:last-child {
+    border: 0;
+  }
+}
+@media (min-width: 580px) {
+  #navigation #navigation-items {
+    display: none;
+  }
+}
+#navigation #navigation-items .nav-active {
+  color: darkblue;
+  text-decoration: underline;
+}
+#navigation #navigation-items-desktop {
+  display: none;
+  width: 100%;
+}
+#navigation #navigation-items-desktop ul {
+  display: inline;
+  margin-right: 1rem;
+  padding-top: 0.2rem;
+}
+#navigation #navigation-items-desktop ul li {
+  border: 3px solid transparent;
+  display: inline;
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+  float: right;
+}
+@media (min-width: 767px) {
+  #navigation #navigation-items-desktop ul li {
+    margin-right: 2rem;
+    padding-top: 0.4rem;
+  }
+}
+#navigation #navigation-items-desktop ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+#navigation #navigation-items-desktop ul li a :active {
+  color: blue;
+}
+#navigation #navigation-items-desktop ul li :hover {
+  color: blue;
+  background-color: lightblue;
+}
+#navigation #navigation-items-desktop .nav-active {
+  color: darkblue;
+  text-decoration: underline;
+}
+@media (min-width: 580px) {
+  #navigation #navigation-items-desktop {
+    display: inline;
+  }
+}
+
+.hidden-nav {
+  height: 0 !important;
+}
+
+#menuicon {
+  padding: 12px;
+}
+#menuicon div {
+  background-color: black;
+  width: 32px;
+  height: 5px;
+  border-radius: 5px;
+}
+#menuicon .bar1 {
+  margin: 2px 0 6px 0;
+  transition: 0.3s;
+}
+#menuicon .bar2 {
+  margin: 6px 0;
+  transition: 0.3s;
+}
+#menuicon .bar3 {
+  margin: 0;
+  transition: 0.3s;
+}
+@media (min-width: 580px) {
+  #menuicon {
+    display: none;
+  }
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
