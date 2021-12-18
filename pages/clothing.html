@@ -24,7 +24,7 @@
         <header>
             <h1 class="commonscss-hiddenonmobile">Tap Tap Shop</h1>
             <h1>Clothings!!</h1>
-            <p>Buy them now while they are SALE!</p>
+            <p>Buy them now while AVAILABLE!</p>
         </header>
     </main>
 
@@ -32,30 +32,48 @@
     <div id="products">
     <div class='commonscss-row-card-responsive'>
     <!-- ================== -->
-            <div id='product-card'>
-            <div class='card-header'>
-                <img src="assets/products/mobiles/samsung-galaxy-a60.jpg" />
-                <img class='discount' src="assets/app/10off.png" />
-                <h3>Samsung Galaxy A60</h3>
+    <div id='product-card'>
+        <div class='card-header'>
+            <img src="assets/products/clothes/menyellow.jpg" />
+            <img class='discount' src="assets/app/20off.png" />
+            <h3>Yellow Battery Shirt</h3>
+        </div>
+        <div class='card-contents'>
+            <div class='rating'>
+                <img src="assets/app/4star.png" />
+                <h3>P224 <del>(P280)</del></h3>
             </div>
-            <div class='card-contents'>
-                <div class='rating'>
-                    <img src="assets/app/4halfstar.png" />
-                    <h3>P9,899 <del>(P10,999)</del></h3>
-                </div>
-                <div class='buynow'>
-                    <p>20 in stock</p>
-                    <button id="PongDesignFancyButton"> Buy Now!</button>
-                </div>
+            <div class='buynow'>
+                <p>32 in stock</p>
+                <button id="PongDesignFancyButton" onclick="window.location.href='pages/buynow.html'"> Buy Now!</button>
             </div>
         </div>
+    </div>
     <!-- ================== -->
-    
+    <div id='product-card'>
+        <div class='card-header'>
+            <img src="assets/products/clothes/wornstories.jpg" />
+            <h3>Worn Stories</h3>
+        </div>
+        <div class='card-contents'>
+            <div class='rating'>
+                <img src="assets/app/4halfstar.png" />
+                <h3>P500</h3>
+            </div>
+            <div class='buynow'>
+                <p>64 in stock</p>
+                <button id="PongDesignFancyButton" onclick="window.location.href='pages/buynow.html'"> Buy Now!</button>
+            </div>
+        </div>
+    </div>
+
     <!-- -->
     </div>
     </div>
     </section>
 
+    <div style="height: 25vh;"></div>
+    
     <footer id='footer'></footer>
     <script src="javascripts/footer.js"></script>
     <script src="javascripts/navigation/navigation.js"></script>

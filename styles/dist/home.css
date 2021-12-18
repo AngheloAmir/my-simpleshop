@@ -65,8 +65,26 @@ main header button {
   padding-top: 3rem;
 }
 #onsale #products #product-card {
+  border: 2px solid transparent;
   box-shadow: 1px 1px 3px gray;
   padding: 0.5rem;
+  width: 85%;
+  margin-left: 7.5%;
+}
+#onsale #products #product-card:hover {
+  border: 2px solid orange;
+}
+@media (min-width: 567px) {
+  #onsale #products #product-card {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media (min-width: 767px) {
+  #onsale #products #product-card {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 #onsale #products #product-card .card-header {
   position: relative;

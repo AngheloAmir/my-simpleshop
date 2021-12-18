@@ -19,7 +19,9 @@
     <nav id="navigation">
     </nav>
 
-    <main class="commonscss-container">
+    <div class="commonscss-container">
+
+    <main>
         <img src="assets/banners/categories.jpg" />
         <header>
             <h1 class="commonscss-hiddenonmobile">Tap Tap Shop</h1>
@@ -28,42 +30,90 @@
         </header>
     </main>
 
-    <section id="listOfCategories" class="commonscss-container">
-        <a id='category-item' href="pages/flashdeals.html">
-            <img src="assets/banners/flashdeal.jpg" />
-            <div>
-                <h1>Flash Deals</h1>
-                <p>Buy Sales and Save More! Browse to list of product that currently DISCOUNTED!</p>
-                <span>Browse products</span>
-            </div>
-        </a>
-
-        <a id='category-item' href="pages/mobilephones.html">
-            <img src="assets/banners/mobiles.jpg" />
-            <div>
-                <h1>Mobile Phones</h1>
-                <p> Choose from Iphone to Samsung lastest mobile phone at nearly the factory prices.</p>
-                <span>Browse products</span>
-            </div>
-        </a>
-        <a id='category-item' href="pages/clothing.html">
-            <img src="assets/banners/clothes.jpg" />
-            <div>
-                <h1>Clothings</h1>
-                <p>Choose from well crafted and fashionable products. Made with quality materials.</p>
-                <span>Browse products</span>
-            </div>
-        </a>
-        <a id='category-item' href="pages/sneakers.html">
-            <img src="assets/banners/clothes.jpg" />
-            <div>
-                <h1>Sneakers</h1>
-                <p>Browse our top of the line sneaker for every use. Made durable that can last for decades.</p>
-                <span>Browse products</span>
-            </div>
-        </a>
+    <section id="listOfCategories">
+        <div class="common-two-row-on-1200px">
+            <a id='category-item' href="pages/flashdeals.html">
+                <img src="assets/banners/flashdeal.jpg" />
+                <div>
+                    <h1>Flash Deals</h1>
+                    <p>Buy Sales and Save More! Browse to list of product that currently DISCOUNTED!</p>
+                    <span>Browse products</span>
+                </div>
+            </a>
+    
+            <a id='category-item' href="pages/mobilephones.html">
+                <img src="assets/banners/mobiles.jpg" />
+                <div>
+                    <h1>Mobile Phones</h1>
+                    <p> Choose from Iphone to Samsung lastest mobile phone at nearly the factory prices.</p>
+                    <span>Browse products</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="common-two-row-on-1200px">
+            <a id='category-item' href="pages/clothing.html">
+                <img src="assets/banners/clothes.jpg" />
+                <div>
+                    <h1>Clothings</h1>
+                    <p>Choose from well crafted and fashionable products. Made with quality materials.</p>
+                    <span>Browse products</span>
+                </div>
+            </a>
+            <a id='category-item' href="pages/sneakers.html">
+                <img src="assets/banners/sneaker.jpg" />
+                <div>
+                    <h1>Sneakers</h1>
+                    <p>Browse our top of the line sneaker for every use. Made durable to last!</p>
+                    <span>Browse products</span>
+                </div>
+            </a>
+        </div>
     </section>
 
+    <section id='searchproducts' >
+        <header>
+            <h1>Search for a product instead</h1>
+        </header>
+        <div class='form'>
+            <div class="field-row">
+                <div class="field-item">
+                    <label for="text-productname">Product Name:</label>
+                    <input type="text" id="text-productname" />
+                </div>
+                <div  class="field-item">
+                    <label for="text-minprice">Minimun Price (0 = all)</label>
+                    <input type="number" id="text-minprice"  value="0" />
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field-item">
+                    <label for="searchoption">Category</label>
+                    <select name="searchoption" id="searchoption">
+                        <option value="all">All Items</option>
+                        <option value="flashdeals">Flash Deals</option>
+                        <option value="mobiles">Mobiles Phones</option>
+                        <option value="clothes">Clothing</option>
+                        <option value="sneakers">Sneakers</option>
+                    </select>
+                </div>
+                <div class="field-item">
+                    <label for="genderoption">Gender</label>
+                    <select name="genderoption" id="genderoption">
+                        <option value="all">For All</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="PongDesignFancyButton" onclick="window.location.href='pages/flashdeals.html'"
+            > Search product</button>
+        </div>
+        
+    </section>
+
+    </div> <!-- End of <div class="commonscss-container">-->
     <footer id='footer'></footer>
     <script src="javascripts/footer.js"></script>
     <script src="javascripts/navigation/navigation.js"></script>

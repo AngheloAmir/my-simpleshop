@@ -20,7 +20,7 @@ createNavigation(
     'assets/brandtitle.png', [
         { name: 'Home',         link: 'index.html',             isActive: isAtCurrent('index.html') || isAtCurrent('') },
         { name: 'Categories',   link: 'pages/categories.html',  isActive: isAtCurrent('categories.html') },
-        { name: 'Promos',       link: '', isActive: false },
+        { name: 'Promos',       link: 'pages/promos.html',      isActive: isAtCurrent('promos.html') },
         { name: 'Support',      link: '', isActive: false },
         { name: 'Log In',       link: '', isActive: false }
     ]

@@ -6,7 +6,7 @@ main {
     }
 
     img {
-        margin-left: calc((100vw - 320px) / 2);
+        margin-left: calc((100% - 320px) / 2);
         width: 320px;
         @media (min-width: 567px) {
             margin-left: 0;
@@ -32,9 +32,22 @@ main {
         padding-top: 3rem;
 
         #product-card {
+            border: 2px solid transparent;
             box-shadow: 1px 1px 3px gray;
             padding: 0.5rem;
-
+            width: 85%; margin-left: 7.5%;
+            &:hover {
+                border: 2px solid orange;
+            }
+            @media (min-width: 567px) {
+                width: 70%;
+                margin-left: 15%;
+            }
+            @media (min-width: 767px) {
+                width: 100%;
+                margin-left: 0;
+            }
+            
             .card-header {
                 position: relative;
                 img {

@@ -8,8 +8,8 @@ main {
   }
 }
 main img {
-  margin-left: calc((100vw - 320px) / 2);
-  width: 320px;
+  margin-left: calc((100% - 300px) / 2);
+  width: 300px;
 }
 @media (min-width: 567px) {
   main img {
@@ -64,8 +64,15 @@ main header p {
     margin-left: calc((100% - 700px) / 2);
   }
 }
+@media (min-width: 1200px) {
+  #listOfCategories #category-item {
+    width: 49%;
+    margin-left: 0px;
+  }
+}
 #listOfCategories #category-item img {
-  width: 280px;
+  width: 260px;
+  height: 162px;
   margin-left: calc((100% - 280px) / 2);
 }
 @media (min-width: 567px) {
@@ -88,4 +95,67 @@ main header p {
   font-size: 1.2rem;
   padding-top: 0.5rem;
   text-decoration: underline;
+}
+
+#searchproducts {
+  margin-top: 1rem;
+  margin-bottom: 5vh;
+}
+#searchproducts header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#searchproducts .form {
+  box-shadow: 2px 2px 5px gray;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 95%;
+  margin-left: 2.5%;
+}
+@media (min-width: 567px) {
+  #searchproducts .form {
+    width: 85%;
+    margin-left: 7.5%;
+  }
+}
+#searchproducts .form .field-row {
+  display: block;
+}
+@media (min-width: 567px) {
+  #searchproducts .form .field-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#searchproducts .form .field-row .field-item {
+  padding: 0.2rem;
+}
+@media (min-width: 567px) {
+  #searchproducts .form .field-row .field-item {
+    width: 48%;
+  }
+}
+#searchproducts .form .field-row .field-item label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#searchproducts .form .field-row .field-item input, #searchproducts .form .field-row .field-item select {
+  width: 98%;
+  font-size: 1.1rem;
+  margin: 0.5rem 1px;
+  padding: 0.35rem;
+  border-radius: 10px;
+  border: 1px solid #0005;
+}
+#searchproducts .form button {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1rem;
+}
+@media (min-width: 567px) {
+  #searchproducts .form button {
+    width: 70%;
+    margin-left: 15%;
+  }
 }

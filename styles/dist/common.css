@@ -10,25 +10,26 @@
 }
 */
 .commonscss-container {
-  width: 97%;
-  margin-left: 1.5%;
-}
-@media (min-width: 567px) {
-  .commonscss-container {
-    width: 94%;
-    margin-left: 3%;
-  }
+  width: 90%;
+  margin-left: 5%;
 }
 @media (min-width: 767px) {
   .commonscss-container {
-    width: 90%;
-    margin-left: 5%;
+    width: 85%;
+    margin-left: 7.5%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .commonscss-container {
-    max-width: 1200px;
-    margin-left: calc((100vw - 1200px) / 2);
+    max-width: 1100px;
+    margin-left: calc((100vw - 1100px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .common-two-row-on-1200px {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
