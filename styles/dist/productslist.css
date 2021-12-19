@@ -1,7 +1,18 @@
+/*
+common things to copy:
+
+    @include tabletscreen {
+        background-color: green; 
+    }
+    @include desktopscreen {
+        background-color: blue;
+    }
+
+*/
 main {
   margin-top: 4.5rem;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   main {
     display: flex;
     justify-content: space-evenly;
@@ -11,7 +22,7 @@ main img {
   margin-left: calc((100% - 320px) / 2);
   width: 320px;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   main img {
     margin-left: 0;
   }
@@ -41,7 +52,7 @@ main header p {
 #onsale #products #product-card:hover {
   border: 2px solid orange;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #onsale #products #product-card {
     width: 70%;
     margin-left: 15%;
@@ -91,7 +102,7 @@ main header p {
 #onsale #products #product-card .card-contents .rating img {
   height: 32px;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #onsale #products #product-card .card-contents .rating img {
     height: 24px;
     width: 130px;

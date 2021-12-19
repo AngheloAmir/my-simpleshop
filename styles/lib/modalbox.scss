@@ -1,0 +1,67 @@
+/*
+<div id='darkbackground' class='modal-hidden'></div>
+<div id='modalbox1' class='modal-hidden'>
+    <div class='heading'>
+    TY!! 
+    </div>
+    <div class='content'>
+        <p>Thank You for purchasing our products. The product will be delivered to you in 3 to 7 days!</p>
+    </div>
+</div>
+...
+<script>
+    function thankyoumessage() {
+        document.getElementById('modalbox1').classList.toggle('modal-hidden');
+        document.getElementById('darkbackground').classList.toggle('modal-hidden');
+    }
+</script>
+*/
+
+#modalbox1, #modalbox2 {
+    background-color: white;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 1rem;
+    display: block;
+    position: fixed;
+    top: 25vh; left: 10%;
+    z-index: 21;
+    width: 80%;
+    @media (min-width: 567px) {
+        width: 500px;
+        left: calc((100vw - 500px) / 2);
+    }
+    @media (min-width: 980px) {
+        width: 600px;
+        left: calc((100vw - 600px) / 2);
+    }
+
+    .heading {
+        background-color: lightblue;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0.5rem 1rem;
+    }
+
+    button {
+        margin-top: 1.5rem;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+#darkbackground {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 20;
+}
+.modal-hidden {
+    display: none !important;
+}

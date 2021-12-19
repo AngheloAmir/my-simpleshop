@@ -1,6 +1,17 @@
+/*
+common things to copy:
+
+    @include tabletscreen {
+        background-color: green; 
+    }
+    @include desktopscreen {
+        background-color: blue;
+    }
+
+*/
 #PongDesignFancyButton {
   align-self: center;
-  background-color: #917ee6;
+  background-color: #b09fff;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
   border: 0;
   color: black;
@@ -9,7 +20,7 @@
   margin-bottom: 1rem;
   -webkit-touch-callout: none;
 }
-@media (min-width: 578px) {
+@media (min-width: 579px) {
   #PongDesignFancyButton {
     margin-top: 1rem;
   }

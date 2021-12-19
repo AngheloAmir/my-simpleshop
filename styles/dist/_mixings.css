@@ -1,0 +1,11 @@
+/*
+common things to copy:
+
+    @include tabletscreen {
+        background-color: green; 
+    }
+    @include desktopscreen {
+        background-color: blue;
+    }
+
+*/

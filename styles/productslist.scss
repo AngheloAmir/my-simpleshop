@@ -1,6 +1,8 @@
+@import 'mixings.scss';
+
 main {
     margin-top: 4.5rem;
-    @media (min-width: 567px) {
+    @include mediumscreen {
         display: flex;
         justify-content: space-evenly;
     }
@@ -8,7 +10,7 @@ main {
     img {
         margin-left: calc((100% - 320px) / 2);
         width: 320px;
-        @media (min-width: 567px) {
+        @include mediumscreen {
             margin-left: 0;
         }
     }
@@ -39,11 +41,11 @@ main {
             &:hover {
                 border: 2px solid orange;
             }
-            @media (min-width: 567px) {
+            @include mediumscreen {
                 width: 70%;
                 margin-left: 15%;
             }
-            @media (min-width: 767px) {
+            @include tabletscreen {
                 width: 100%;
                 margin-left: 0;
             }
@@ -82,7 +84,7 @@ main {
                     justify-content: space-between;
                     img {
                         height: 32px;
-                        @media (min-width: 567px) {
+                        @include mediumscreen {
                             height: 24px;
                             width: 130px;
                         }   

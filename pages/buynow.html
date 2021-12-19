@@ -9,8 +9,10 @@
         <link rel="stylesheet" href="javascripts/navigation/dist/navigation.css">
         <link rel="stylesheet" href="styles/dist/common.css">
         <link rel="stylesheet" href="styles/dist/fancybutton.css">
-        <link rel="icon"       href="assets/favicon.ico" />
+        <link rel="stylesheet" href="styles/dist/buynow.css">
+        <link rel="stylesheet" href="styles/lib/dist/modalbox.css">
 
+        <link rel="icon"       href="assets/favicon.ico" />
         <link rel="stylesheet" href="styles/dist/categories.css">
         <title>Categories</title>
         <meta name="description" content="Tap Tap Shop Categories">
@@ -21,40 +23,46 @@
 
     <div class="commonscss-container">
 
-    <main>
-        <img src="assets/buynow/main.jpg" />
-        <h3>adasdadsasdasdasd</h3>
-        <div class='rating'>
+    <main id="productmain">
+        <header>
+            <img src="assets/buynow/main.jpg" />
+            <h3>SKMEI WPierce 1142 Black Military Grade Sport-watch</h3>
+        </header>
+        
+        <div class='product-rating'>
             <img src="assets/app/4halfstar.png" />
-            <h3>P9,899 <del>(P10,999)</del></h3>
+            <h3>P300 <del>(P330)</del></h3>
         </div>
-        <h3>Shipping Fee:</h3> P50
+
+        <div class='shipping'>
+            <h3>Shipping Fee:</h3>
+            <div>
+                <span>Express Delivery</span>
+                <p>P80 (2 to 7 days, Laguna)</p>
+            </div>
+            <div>
+                <span>Standard Delivery</span>
+                <p>P50 (3 to 14 days, Laguna)</p>
+            </div>
+        </div>
     </main>
 
-    <section>
-        <h3>Features</h3>
+    <section id="description">
+        <div id='item'>Features</div>
         <ul>
-            <ul>Alarm</ul>
-            <ul>Auto Date</ul>
-            <ul>Chronograph</ul>
-            <ul>Complete Calendar</ul>
+            <li>Alarm</li>
+            <li>Auto Date</li>
+            <li>Chronograph</li>
+            <li>Complete Calendar</li>
         </ul>
-        <h3>Description</h3>
-        <div class="field">
-            <b>Strap Material:</b> Silicone
-        </div>
-        <div class="field">
-            <b>Strap Material:</b> Silicone
-        </div>
-        <div class="field">
-            <b>Gender:</b> Unisex
-        </div>
-        <div class="field">
-            <b>Water Resistant:</b> 5ATM
-        </div>
-        <div class="field">
-            <b>Baterry Life:</b> 2-3years
-        </div>
+        
+        <div id='item'>Description</div>
+        <ul>
+            <li><b>Strap Material:</b> Silicone</li>
+            <li><b>Gender:</b> Unisex</li>
+            <li><b>Water Resistant:</b> upto 5 meter (ATM)</li>
+            <li><b>Battery Life:</b> upto 2 years</li>
+        </ul>
     </section>
 
     <section id='imagepresentation'>
@@ -63,12 +71,66 @@
     </section>
 
     <section id='buynow'>
-        <button id='PongDesignFancyButton'>Buy now!</button>
+        <button id='PongDesignFancyButton' onclick="thankyoumessage()">Buy now!</button>
+        <button id='PongDesignFancyButton' onclick="productAddedToCart()">Add to cart</button>
     </section>
 
-    <div style="height: 25vh;"></div>
+    <section id='reviews'>
+        <div id='item'>Reviews</div>
+
+        <div class='review-item'>
+            <h4>MyUser_01010</h4>
+            <h4>Rating: 4 Star</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, blanditiis accusamus, sint maxime corporis odit asperiores molestiae sunt assumenda ipsa distinctio velit culpa aspernatur illo!
+            </p>
+        </div>
+
+        <div class='review-item'>
+            <h4>Fenemememe 10101</h4>
+            <h4>Rating: 5 Star</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, blanditiis accusamus, sint maxime corporis odit asperiores molestiae sunt assumenda ipsa distinctio velit culpa aspernatur illo!
+            </p>
+        </div>
+    </section>
+    <div style="height: 10vh;"></div>
+
     </div> <!-- End of <div class="commonscss-container">-->
     <footer id='footer'></footer>
+
+    <div id='darkbackground' class='modal-hidden'></div>
+    <div id='modalbox1' class='modal-hidden'>
+        <div class='heading'>
+            <p><b>Thanky You</b></p>
+        </div>
+        <div class='content'>
+            <p>Thank You for purchasing our products. The product will be delivered to you in 3 to 7 days!</p>
+            <button id='PongDesignFancyButton' onclick="thankyoumessage()">OK</button>
+        </div>
+    </div>
+    <div id='modalbox2' class='modal-hidden'>
+        <div class='heading'>
+            <p><b>Prouduct Added!</b></p>
+        </div>
+        <div class='content'>
+            <p>The product is successfully added to your cart</p>
+            <button id='PongDesignFancyButton' onclick="productAddedToCart()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        function thankyoumessage() {
+            document.getElementById('modalbox1').classList.toggle('modal-hidden');
+            document.getElementById('darkbackground').classList.toggle('modal-hidden');
+        }
+
+        function productAddedToCart() {
+            document.getElementById('modalbox2').classList.toggle('modal-hidden');
+            document.getElementById('darkbackground').classList.toggle('modal-hidden');
+        }
+    </script>
+
     <script src="javascripts/footer.js"></script>
     <script src="javascripts/navigation/navigation.js"></script>
 

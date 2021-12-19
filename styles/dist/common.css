@@ -1,13 +1,13 @@
 /*
-    @media (min-width: 567px) {
+common things to copy:
+
+    @include tabletscreen {
+        background-color: green; 
+    }
+    @include desktopscreen {
+        background-color: blue;
     }
 
-    @media (min-width: 767px) {
-    }
-
-    @media (min-width: 1200px) {
-    }
-}
 */
 .commonscss-container {
   width: 90%;
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 578px) {
   .commonscss-hiddenonmobile {
     display: none;
   }

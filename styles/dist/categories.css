@@ -1,3 +1,14 @@
+/*
+common things to copy:
+
+    @include tabletscreen {
+        background-color: green; 
+    }
+    @include desktopscreen {
+        background-color: blue;
+    }
+
+*/
 main {
   margin-top: 4.5rem;
 }
@@ -11,7 +22,7 @@ main img {
   margin-left: calc((100% - 300px) / 2);
   width: 300px;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   main img {
     margin-left: 0;
   }
@@ -31,7 +42,7 @@ main header p {
 #listOfCategories {
   margin-top: 1.5rem;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #listOfCategories {
     margin-top: 2rem;
   }
@@ -50,7 +61,7 @@ main header p {
 #listOfCategories #category-item:hover {
   border: 2px solid orange;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #listOfCategories #category-item {
     display: flex;
     justify-content: space-around;
@@ -75,7 +86,7 @@ main header p {
   height: 162px;
   margin-left: calc((100% - 280px) / 2);
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #listOfCategories #category-item img {
     margin-left: 0;
   }
@@ -83,7 +94,7 @@ main header p {
 #listOfCategories #category-item div {
   text-align: center;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #listOfCategories #category-item div {
     padding: 0.5rem;
     width: 50%;
@@ -112,7 +123,7 @@ main header p {
   width: 95%;
   margin-left: 2.5%;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #searchproducts .form {
     width: 85%;
     margin-left: 7.5%;
@@ -121,7 +132,7 @@ main header p {
 #searchproducts .form .field-row {
   display: block;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #searchproducts .form .field-row {
     display: flex;
     justify-content: space-between;
@@ -130,7 +141,7 @@ main header p {
 #searchproducts .form .field-row .field-item {
   padding: 0.2rem;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #searchproducts .form .field-row .field-item {
     width: 48%;
   }
@@ -153,7 +164,7 @@ main header p {
   margin-left: 5%;
   margin-top: 1rem;
 }
-@media (min-width: 567px) {
+@media (min-width: 579px) {
   #searchproducts .form button {
     width: 70%;
     margin-left: 15%;
