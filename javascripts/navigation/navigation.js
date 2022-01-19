@@ -21,8 +21,8 @@ createNavigation(
         { name: 'Home',         link: 'index.html',             isActive: isAtCurrent('index.html') || isAtCurrent('') },
         { name: 'Categories',   link: 'pages/categories.html',  isActive: isAtCurrent('categories.html') },
         { name: 'Promos',       link: 'pages/promos.html',      isActive: isAtCurrent('promos.html') },
-        { name: 'Support',      link: '', isActive: false },
-        { name: 'Log In',       link: '', isActive: false }
+        { name: 'Support',      link: 'pages/support.html',     isActive: isAtCurrent('support.html') },
+        { name: 'Log In',       link: 'pages/login.html',       isActive: isAtCurrent('login.html') }
     ]
 );
 
